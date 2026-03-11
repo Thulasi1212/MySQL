@@ -191,5 +191,3 @@ join emp_pro ep on p.pro_id=ep.pro_id
 join employees e on ep.emp_id=e.emp_id
 group by pro_name
 having count(distinct(e.dep_id))>1;
-
--- Find department that has employees working on the most projects.
